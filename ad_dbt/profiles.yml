@@ -1,0 +1,11 @@
+ad_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: integrated-net-411608
+      schema: data_source_trips
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: "/mnt/c/Users/USER/Desktop/data-engineering-zoomcamp/Testing/google-acc.json"
+      location: us-east1

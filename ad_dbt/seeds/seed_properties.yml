@@ -1,0 +1,28 @@
+version: 2
+
+seeds:
+  - name: taxi_zone_lookup
+    description: >
+      This seed file contains the taxi zone lookup data
+    columns:
+      - name: locationID
+        description: >
+          The location id of the taxi zone
+        tests:
+          - unique
+          - not_null
+      - name: borough
+        description: >
+          The borough of the taxi zone
+        tests:
+          - not_null
+      - name: zone
+        description: >
+          The zone of the taxi zone
+        tests:
+          - not_null
+      - name: service_zone
+        description: >
+          The service zone of the taxi zone
+        tests:
+          - not_null

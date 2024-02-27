@@ -1,0 +1,13 @@
+version: 2
+
+macros:
+  - name: limit_number_return 
+    description: >
+      This macro limits the number of rows returned by a query
+    arguments:
+      - name: limit_value
+        type: int
+        description: >
+          The number of rows to return
+    # definition: >
+    #   select * from {{ ref('my_model') }} limit {{ limit }}
